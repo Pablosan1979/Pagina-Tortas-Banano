@@ -2,93 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tabla Nutricional - Torta de Banano</title>
+  <title>Torta Artesanal de Banano - Ingredientes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      margin: 40px;
+      background: #faf4ef;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-
+    .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+    }
     h1 {
-      color: #8B4513;
+      color: #6a4c2b;
     }
-
-    .tabla-nutricional {
-      width: 60%;
+    table {
+      width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
-      background-color: #fff;
+      margin-top: 15px;
     }
-
-    .tabla-nutricional th, .tabla-nutricional td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: left;
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
     }
-
-    .tabla-nutricional th {
-      background-color: #f4e1d2;
+    th {
+      background: #f3e3d3;
+      color: #5a3d23;
     }
-
-    .nota {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #666;
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    tfoot td {
+      font-weight: bold;
+      background: #f3e3d3;
     }
   </style>
 </head>
 <body>
-
-  <h1>Tabla Nutricional - Torta de Banano</h1>
-
-  <table class="tabla-nutricional">
-    <tr>
-      <th>Componente</th>
-      <th>Cantidad por porción (100g)</th>
-    </tr>
-    <tr>
-      <td>Calorías</td>
-      <td>265 kcal</td>
-    </tr>
-    <tr>
-      <td>Grasas totales</td>
-      <td>10 g</td>
-    </tr>
-    <tr>
-      <td>Grasas saturadas</td>
-      <td>3 g</td>
-    </tr>
-    <tr>
-      <td>Carbohidratos</td>
-      <td>40 g</td>
-    </tr>
-    <tr>
-      <td>Azúcares</td>
-      <td>20 g</td>
-    </tr>
-    <tr>
-      <td>Proteínas</td>
-      <td>3 g</td>
-    </tr>
-    <tr>
-      <td>Fibra dietética</td>
-      <td>1.5 g</td>
-    </tr>
-    <tr>
-      <td>Sodio</td>
-      <td>250 mg</td>
-    </tr>
-    <tr>
-      <td>Potasio</td>
-      <td>200 mg</td>
-    </tr>
-  </table>
-
-  <p class="nota">
-    * Los valores pueden variar ligeramente según la receta y el tamaño de la porción.
-  </p>
-
+  <div class="container">
+    <h1>Ingredientes e informacion nutricional(100 g de torta de banano)</h1>
+    <table>
+      <tr>
+        <th>Ingrediente</th>
+        <th>Cantidad</th>
+        <th>Calorías aprox.</th>
+      </tr>
+      <tr>
+        <td>Banano maduro</td>
+        <td>30 g</td>
+        <td>27 kcal</td>
+      </tr>
+      <tr>
+        <td>Harina de trigo</td>
+        <td>25 g</td>
+        <td>91 kcal</td>
+      </tr>
+      <tr>
+        <td>Azúcar morena</td>
+        <td>15 g</td>
+        <td>58 kcal</td>
+      </tr>
+      <tr>
+        <td>Mantequilla</td>
+        <td>10 g</td>
+        <td>72 kcal</td>
+      </tr>
+      <tr>
+        <td>Huevo</td>
+        <td>15 g</td>
+        <td>22 kcal</td>
+      </tr>
+      <tr>
+        <td>Polvo de hornear</td>
+        <td>2 g</td>
+        <td>2 kcal</td>
+      </tr>
+      <tr>
+        <td>Canela en polvo</td>
+        <td>1 g</td>
+        <td>3 kcal</td>
+      </tr>
+      <tr>
+        <td>Esencia de vainilla</td>
+        <td>2 g</td>
+        <td>6 kcal</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>281 kcal</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </body>
 </html>
